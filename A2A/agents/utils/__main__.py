@@ -53,7 +53,7 @@ def main(host, port):
 
         logger.info(f"Starting Utilities MCP agent on {host}:{port}")
         server.start()
-        logger.info(f"✅ Uvicorn should now be running at http://{host}:{port}")
+        logger.info(f"Uvicorn should now be running at http://{host}:{port}")
 
     except MissingAPIKeyError as e:
         logger.error(f"Error: {e}")
