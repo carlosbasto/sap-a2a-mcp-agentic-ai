@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 
 
 class AgentTaskManager(InMemoryTaskManager):
-    """Agent Task Manager for UtilityAgent, handles task lifecycle and packaging."""
+    """Agent Task Manager for SAPAgent, handles task lifecycle and packaging."""
 
     def __init__(self, agent: SAPAgent):
         super().__init__()
