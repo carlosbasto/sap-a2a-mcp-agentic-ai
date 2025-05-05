@@ -1,7 +1,7 @@
 [project]
 name = "sap-agent-mcp"
 version = "0.1.0"
-description = "A2A-compatible Utility Agent using MCP and SAP GenAI Hub"
+description = "A2A-compatible SAP Agent using MCP and SAP GenAI Hub"
 readme = "README.md"
 requires-python = ">=3.12"
 
