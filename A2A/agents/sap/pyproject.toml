@@ -1,0 +1,18 @@
+[project]
+name = "sap-agent-mcp"
+version = "0.1.0"
+description = "A2A-compatible Utility Agent using MCP and SAP GenAI Hub"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+  "ag2[mcp, openai]>=0.8.6",         # A2A framework, MCP client, OpenAI-compatible LLM support
+  "generative-ai-hub-sdk[all]>=0.4.0",      # SAP GenAI Hub orchestration + LLM schemas
+  "fastapi",                         # Required by A2AServer
+  "uvicorn[standard]>=0.27.1",       # Local server runner
+  "httpx",                           # Used by sse_client and GenAIHub
+  "click>=8.1.3"                     # Optional CLI support (you’re using it)
+]
+
+[tool.uv.sources]
+a2a-agent = { workspace = true }
