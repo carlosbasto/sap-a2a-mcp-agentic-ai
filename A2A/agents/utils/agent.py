@@ -155,7 +155,7 @@ class UtilityAgent:
         }
 
         try:
-            async with sse_client("https://mcp-server-sap.c-49e33bd.stage.kyma.ondemand.com/sse") as (read, write):
+            async with sse_client("https://<your-server>.kyma.ondemand.com/sse") as (read, write):
                 async with ClientSession(read, write) as session:
                     await session.initialize()
                     self.session = session
